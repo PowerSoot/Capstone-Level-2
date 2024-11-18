@@ -129,11 +129,11 @@
         </tr>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how 2 forms are processed in your project. Contact form and appointment form.</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The contact form and appointment form are both processed using the processForm function. This function takes an event parameter and prevents the default form submission behavior. The function retrieves the form data, displays a message indicating that the information is being processed, and creates a new Promise that resolves with a server response. When the Promise resolves, it passes the response to the parseResponse function for further processing. </td>
         </tr>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain why preventDefault was necessary for processing the forms.</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">preventDefault was used to prevent the browser from sending a request to the server and reload the page. Instead, it allowed the JavaScript code to process the form submission.</td>
         </tr>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how the data in each form is extracted.</th>
@@ -178,40 +178,41 @@
           <td class="timeremaining cell c1 lastcol" style=""></td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how a Promise is used by your project.</th>
-          <td class="timeremaining cell c1 lastcol" style="">Promise is a callback function that is used to handle asynchronous operations.</td>
+          <td class="timeremaining cell c1 lastcol" style="">A Promise is used in the project to handle the asynchronous operation of sending a form submission to the server. It is created when the form is submitted and it resolves with a server response. The response is then passed to a callback function for further processing.
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how a resolve function is used by your project.</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <th class="cell c0" style="" scope="row">Properly explain how a resolve function is used by your project.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The resolve function is used to resolve a Promise. It takes a value as an argument and returns a new Promise that resolves with the value. The resolve function is used in the processForm function to resolve the Promise with the server response after the form data has been processed. The resolved Promise is then passed to the parseResponse function for further processing.
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how a resolve value is passed to a callback function in your project.</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The resolve value is passed to a callback function when the promise is resolved. For example, in the `getServerResponse2` function, the `resolve` callback is called with a JSON string as the resolve value. This value is then passed to the `parseResponse` function, which extracts and outputs the message contained in the JSON.</td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how setTimeout is used to simulate a server response</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The setTimeout function is used to simulate a server response by introducing a delay before executing a specified function. In my example, setTimeout is used to delay the resolution of a promise by 5 seconds, mimicking the time it might take for a server to respond. This delay helps in testing the asynchronous behavior of the application by allowing developers to handle the delay in their code logic.</td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain why JSON methods are used by your project. stringify and parse</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The JSON methods used by my project are JSON.stringify() and JSON.parse(). JSON.stringify() is used to convert a JavaScript object into a JSON string. JSON.parse() is used to convert a JSON string into a JavaScript object. These methods are used to send and receive data in the form of JSON strings via the fetch API. The JSON.stringify() method is used to convert the data to be sent in the body of the request into a JSON string. The JSON.parse() method is used to convert the server response into a JavaScript object. The JSON methods are used in the project to send and receive data between the client and server.</td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how a function follows the handler naming convention.</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The function handleSubmit follows the handler naming convention. This function is linked to the HTML form element via the onsubmit attribute. The function takes an event parameter and prevents the default form submission behavior. The function retrieves the form data, displays a message indicating that the information is being processed, and creates a new Promise that resolves with a server response. When the Promise resolves, it passes the response to the parseResponse function for further processing. </td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how your project uses the fetch function.</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The fetch function is used to retrieve data from the server. The function takes in a URL and returns a Promise that resolves with the response from the server. The Promise is then passed to the parseResponse function for further processing. The fetch function is used on the "Contact Us" page to retrieve the server response after the user submits the form. </td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">What's the base URL? What are the key/value pairs? What does the fetch function return?</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The base URL is https://jsonplaceholder.typicode.com/todos/. The key/value pairs are: "userId": 1, "id": 1, "title": "delectus aut autem", "completed": false. The fetch function returns a Promise that resolves to a JSON object.</td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how the REST API response is extracted after using the fetch function.</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The REST API response is extracted after using the fetch function by using the json() method. The json() method returns a promise that resolves to the JSON data from the response. The data is then extracted from the resolved promise using destructuring. For example, the response from the API can be extracted like this: const { data } = await response.json();</td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">How is the fetch object accessed? How is the stringified object accessed?</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The fetch object is accessed by using the fetch function. The stringified object is accessed by using the JSON.stringify method.</td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how usable data is extracted from a REST API response.</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">Usable data is extracted from a REST API response by first using the fetch function to retrieve the response. The response is then converted to JSON using the json() method. Once in JSON format, data is accessed using dot notation or destructuring to extract specific fields or values required by the application.</td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how data from a REST API is displayed by your project.</th>
-          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <td class="timeremaining cell c1 lastcol" style="">The data from the REST API is displayed by using the fetch API to make a GET request to the API. The response is then parsed as JSON and the data is displayed on the page using the DOM. The data is displayed in a table with the columns: id, name, and price. The data is also displayed in a list with the items: id, name, and price. The data is displayed on the "Gallery" page.</td>
           <tr class="lastrow">
 
 
