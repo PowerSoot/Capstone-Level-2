@@ -15,31 +15,28 @@
     <img width="100%" src="capstone2's\Images\header1_cr3.png">
   
           <nav aria aria-label="Main navigation" class="navbar mixIt">
-              <a class="" href="index.html">Home Page</a>
-              <a class="" href="about.html">About Our Services</a>
-              <a class="" href="gallery.html">Gallery</a>
-              <a class="active border border-5" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="index.html">Home Page</a>
+              <a class="nav-link" href="about.html">About Our Services</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
+              <a class="nav-link active border border-5" href="contact.html">Contact Us</a>
           </nav>
 
 
   </header>
   <main id="mainTag">
-    <table style="margin: 3% 25% 3% 20%;">
-      <form class="border border-3 border-secondary text-center" onsubmit="handleSubmit(event)">
-        <tr>
-        <h2><span class="badge bg-danger">Need to speak to us?</span> Fill out the form below to schedule an appointment to talk to one of our team members.</h2>
-        <td><label for="name">Name:</label><input class="text-primary" required type="text" placeholder="John Doe" id="name"><br><br></td>
-        
-        <td><label for="phone">Phone:</label><input class="text-primary" required type="tel" placeholder="123-456-7890" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br></td>
-        
-        <td><label for="datetime-local">Date:</label><input class="text-secondary" required type="date" id="date" name="date"><br><br></td>
-        
-        <td><label for="time">Time:</label><input class="text-secondary" required type="time" id="time" name="time"><br><br></td>
-        <td><button class="btn btn-primary m-2" type="onsubmit">Submit</button><br><br></td>
-      </tr>
+    <form class="border border-3 border-secondary text-center" onsubmit="handleSubmit(event)">
+      <label for="name">Name:</label>
+      <input class="text-primary" required type="text" placeholder="John Doe" id="name"><br><br>
+      <label for="phone">Phone:</label>
+      <input class="text-primary" required type="tel" placeholder="123-456-7890" id="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+      <label for="datetime-local">Date:</label>
+      <input class="text-secondary" required type="date" id="date" name="date"><br><br>
+      <label for="time">Time:</label>
+      <input class="text-secondary" id="time" type="time"><br><br>
+      <button type="submit">Submit</button>
     </form>
-      </table>
-      <div id="outputTag"></div>
+    <div id="outputTag"></div>
     </main>
     <footer class="pt-4">
           

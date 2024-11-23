@@ -52,3 +52,12 @@ function output(message) {
 
     outputTag.innerHTML += message + "<br>";
 }
+
+
+function processForm(event) {
+    event.preventDefault();
+    const form = event.target;
+    const messageInput = form[0];
+    const message = messageInput.value;
+    output(` ${message} has been added to our mailing list!`);
+  }

@@ -22,6 +22,8 @@ $textShadow: 2px 2px 2px rgb(58, 138, 175);
 // a mixin is a group of CSS declarations
 // the ampersand (&) is used to target the parent, and then you can target the child elements with the space followed by the element name
 
+
+//propeties and values
 @mixin myFirst-mixin {
     & a {
         text-decoration: none !important;
@@ -80,6 +82,7 @@ $textShadow: 2px 2px 2px rgb(58, 138, 175);
 
 .active {
     background-color: $color2;
+    //value
 }
 
 p {
