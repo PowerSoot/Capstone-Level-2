@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="sass.css">
     <script src="utility-functions.js"></script>
+    <script src="api.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
 
 </head>
@@ -55,7 +56,6 @@
             </div>
         </div>
         <div class="col">
-            <button id="mixin-button">CLICK FOR YOUR SPOT</button>
             <div class="card h-100">
                 <img src="capstone2's\Images\2.png" class="card-img-top" alt="Covered Parking Garage">
                 <div class="card-body">
@@ -67,7 +67,6 @@
             </div>
         </div>
         <div class="col">
-            <button id="mixin-button">CLICK FOR YOUR SPOT</button>
             <div class="card h-100">
                 <img height="453px" src="capstone2's/Images/3.png" class="card-img-top" alt="Climate-cointrolled Garage"
                     style="padding: 0;">
@@ -84,7 +83,8 @@
     <br>
     <hr>
     <br>
-        <h2>JOIN OUR MAILING LIST</h2>
+    <button class="btn btn-primary" onclick="handleQuoteOfTheDay()">Quote of the Day</button><br><br>
+    <div id="outputQotdTag"></div>
 
         <br>
         <hr>

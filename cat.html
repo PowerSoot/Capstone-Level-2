@@ -115,7 +115,14 @@
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">
             Properly explain how you created an image map for your project. At least 2 areas and 2 hyperlinks.</th>
-          <td class="timeremaining cell c1 lastcol" style="">The image map was created by using the usemap attribute in the img tag. The image map is created by using the map element. The map element includes two areas, each with an href attribute and a shape attribute. The href attribute contains the URL of the website that the user will be taken to when they click on the area. The shape attribute contains the shape and coordinates of the area. The two areas are for the two different regions of the map of Louisiana. imageresizer  </td>
+          <td class="timeremaining cell c1 lastcol" style="">The img tag displays the image.
+            The usemap attribute specifies the name of the map (#map1).
+            The map tag defines the clickable areas.
+            Each area tag defines a single clickable area:
+            shape specifies the shape of the area (e.g., rect, circle, poly).
+            coords specifies the coordinates of the area (e.g., x,y,width,height for a rectangle).
+            href specifies the URL to link to when the area is clicked.
+            alt specifies the alternative text for the area.  </td>
         </tr>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how 2 forms in your project automatically validate user input.</th>
@@ -173,7 +180,7 @@
           <td class="timeremaining cell c1 lastcol" style=""></td>
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how a Promise is used by your project.</th>
-          <td class="timeremaining cell c1 lastcol" style="">A Promise is used in the project to handle the asynchronous operation of sending a form submission to the server. It is created when the form is submitted and it resolves with a server response. The response is then passed to a callback function for further processing.
+          <td class="timeremaining cell c1 lastcol" style="">A Promise is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value. It's a way to handle asynchronous code in a more structured and manageable way.A Promise is used in the project to handle the asynchronous operation of sending a form submission to the server. It is created when the form is submitted and it resolves with a server response. The response is then passed to a callback function for further processing.
           <tr class="lastrow">
           <th class="cell c0" style="" scope="row">Properly explain how a resolve function is used by your project.</th>
           <td class="timeremaining cell c1 lastcol" style="">The resolve function is used to resolve a Promise. It takes a value as an argument and returns a new Promise that resolves with the value. The resolve function is used in the processForm function to resolve the Promise with the server response after the form data has been processed. The resolved Promise is then passed to the parseResponse function for further processing.

@@ -49,3 +49,8 @@ function output(message) {
   outputTag.innerHTML += message + "<br>";
 }
 
+  
+  function outputQotd(message) {
+        window.outputQotdTag.innerHTML = message;
+  }
+  
