@@ -50,6 +50,12 @@ function output(message) {
 }
 
   
+/**
+ * Updates the innerHTML of the element with the id `outputQotdTag`
+ * with the provided message, effectively displaying the message
+ * as the Quote of the Day on the webpage.
+ *
+ */
   function outputQotd(message) {
         window.outputQotdTag.innerHTML = message;
   }
